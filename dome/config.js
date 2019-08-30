@@ -15,14 +15,12 @@ const config = {
     {
       type: 'limit',
       describe: '检查文件大小限制 dist',
-      // paths:[path.resolve(__dirname, 'node_modules/ansi-escapes')],
+      // paths:[path.resolve(__dirname, 'node_modules/')],
       paths: [path.resolve(__dirname, 'dist/')],
       // paths: [__dirname],
       min: 0.1,
       max: 100
     },
-//     code: "ENOENT"
-// errno: -4058
     {
       type: 'vueScoped',
       describe: '检查是否 正确添加scoped属性',
